@@ -1,0 +1,38 @@
+1. Calculs initiaux pour un Sous-Réseau /28
+Question	Réponse
+a. Masque de sous-réseau en décimal pointé	255.255.255.240
+b. Bits alloués	- Partie réseau : 28 bits
+- Partie hôte : 4 bits
+c. Nombre total d’adresses IP par sous-réseau	
+2
+4
+=
+16
+2 
+4
+ =16 adresses
+d. Nombre maximal d’hôtes utilisables	
+16
+−
+2
+=
+14
+16−2=14 (hôtes)
+2. Plages d’adresses pour les 4 premiers sous-réseaux /28
+Sous-Réseau	Adresse Réseau	Première IP	Dernière IP	Broadcast
+1	|192.178.12.0	|192.178.12.1 |192.178.12.14|192.178.12.15  |
+2	|192.178.12.16|192.178.12.17|	192.178.12.30|	192.178.12.31|
+3	|192.178.12.32|192.178.12.33|	192.178.12.46|	192.178.12.47|
+4	|192.178.12.48|192.178.12.49|	192.178.12.62|	192.178.12.63|
+Partie 2 : Conception du Réseau et Détection d’Anomalies
+1. Correction du Plan d’Adressage
+Plage valide pour 192.178.12.0/28 : 192.178.12.1 à 192.178.12.14.
+
+Machine hors sous-réseau :
+
+Imprimante N°06 (192.178.12.17) → Appartient au sous-réseau suivant : 192.178.12.16/28.
+
+2. Détails de la Machine Infiltrée
+Adresse Broadcast de son réseau : 192.178.12.31.
+
+Dernier octet binaire : 00011111 (soit 31 en décimal).
